@@ -7,6 +7,5 @@ namespace NewDemo.Models
 {
     public class demo
     {
-        aa
     }
 }
