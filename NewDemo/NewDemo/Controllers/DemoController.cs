@@ -3,21 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
-namespace NewDemo.Controllers
+using GiaiPhuongTrinh.Models;
+namespace GiaiPhuongTrinh.Controllers
 {
     public class DemoController : Controller
     {
         // GET: Demo
-        public ActionResult TinhTong()
+        Class1 GPT = new Class1();
+        public ActionResult Index()
         {
             return View();
         }
         [HttpPost]
-        public ActionResult TinhTong(string soA, string soB)
+        public ActionResult Index(string soA, string soB)
         {
             double so1 = Convert.ToDouble(soA);
             double so2 = Convert.ToDouble(soB);
+            double kq = GPT.GiaiPT(so1,so2);
+            ViewBag.KetQua = kq;
             return View();
         }
     }
