@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace GiaiPhuongTrinh.Models
+namespace NewDemo.Models
 {
     public class Class1
     {
